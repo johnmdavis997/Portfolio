@@ -1,7 +1,21 @@
+/* Body and navbar styles */
+/*=================================================================================*/
 body {
     padding-top: 70px;
     font-family: 'Raleway', sans-serif;
 }
+
+.container-fluid {
+    background: white;
+    border-bottom: solid black; 
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.navText {
+    color: black;
+}
+/*=================================================================================*/
 
 .thumbnail {
     padding: 0;
@@ -46,15 +60,4 @@ hr{
 .container .jumbotron {
     border: 2px solid black;
     padding: 20px;
-}
-
-.container-fluid {
-    background: white;
-    border-bottom: solid black; 
-    letter-spacing: 1px;
-    font-weight: bold;
-}
-
-.navText {
-    color: black;
 }
