@@ -1,33 +1,24 @@
-var express = require("express");
+// Require packages
+var express     = require("express"),
+    mongoose    = require("mongoose"),
+    app         = express();
 
-var app = express();
+// Require routes
+var indexRoutes     = require("./routes/index"),
+    projectRoutes   = require("./routes/projects")
 
+// Require models
+
+// Configuration
+mongoose.connect('mongodb://localhost/portfolio', {useMongoClient: true});
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
-app.get("/", function(req, res){
-    res.render("home")
-});
+// Use routes
+app.use("/", indexRoutes);
+app.use("/project/:id", indexRoutes);
 
-app.get("/about", function(req, res){
-    res.render("about")
-});
-
-app.get("/contact", function(req, res){
-    res.render("contact")
-});
-
-app.get("/signin", function(req, res){
-    res.render("contact")
-});
-
-app.get("/register", function(req, res){
-    res.render("register")
-});
-
-app.get("/logout", function(req, res){
-    res.render("logout")
-});
+// Creates server
 app.listen(3000, function(req, res){
     console.log("Server has started!");
 });
