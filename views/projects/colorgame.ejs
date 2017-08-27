@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/color.css">
+    <title>Kai's portfolio site</title>
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <span class="nav navbar-brand"><i class="glyphicon glyphicon-user"></i> Kai Davis</span>
+            </div>
+            <ul class="nav navbar-nav">
+                    <li><a href="/" class="navText">Home</a></li>
+                    <li><a href="/contact" class="navText">Contact</a></li>
+                    <li><a href="/about" class="navText">About me </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/login" class="navText">Login</a></li>                       
+                <li><a href="/register" class="navText">Signup</a></li>                   
+                <li><a href="/logout" class="navText">Sign Out</a></li>                       
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div id="jt" class="jumbotron">
+            <h2 id="jtText">The Color Game</h2>
+            <hr>
+            <p>Pretty simple game I made using JavaScript when I was taking my web development course. The goal of the game is to click on the square that matches the provided RGB. It's a simple game but it introduced a lot of key JacaScript concepts to me. The version that is here right now is a duplicate of the one I made when I was taking the course, I will add some functionality later including; a score keeper, a scoreboard, comments, and much more...</p>
+        </div>
+    </div>
+
+    <div id="gameContainer"class="container">
+        <h1 id="title">
+            THE GREAT 
+            <br>
+            <span id = "colorDisplay">RGB</span>
+            <br>
+            COLOR GAME
+        </h1>
+        
+        <div id = "stripe">
+            <button id = "reset">NEW COLORS</button>
+            <span id = "message"></span>
+            <button class = "mode">Easy</button>
+            <button class = "mode selected">Hard</button>
+        </div>
+        
+        <div id="container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+    <script src="/scripts/colorgame.js"></script>
+</body>
+</html>

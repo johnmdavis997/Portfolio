@@ -16,7 +16,7 @@ app.use(express.static(__dirname + "/public"));
 
 // Use routes
 app.use("/", indexRoutes);
-app.use("/project/:id", indexRoutes);
+app.use("/project", projectRoutes);
 
 // Creates server
 app.listen(3000, function(req, res){
