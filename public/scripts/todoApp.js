@@ -1,10 +1,10 @@
 // Check off specific todos by clicking
-$("ul").on("click", "li", function () {
+$(".trash").on("click", "li", function () {
     $(this).toggleClass("completed");
 })
 
 // Click on X to delete Todo
-$("ul").on("click", "span", function (event) {
+$(".trash").on("click", "span", function (event) {
     event.stopPropagation();
     $(this).parent().fadeOut(500, function () {
         $(this).remove();
@@ -26,7 +26,7 @@ $("button").on("click", function () {
 function addText() {
     var todoText = $("input").val(); // grabs new todo text from input
     if ($("input").val() > "") {
-        $("ul").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i></span> " + todoText + "</li>");
+        $(".trash").append("<li class='list'><span class='i'><i class='fa fa-trash' aria-hidden='true'></i></span> " + todoText + "</li>");
     }
     $("input").val("");
 }

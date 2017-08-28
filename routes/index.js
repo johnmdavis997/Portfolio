@@ -17,6 +17,10 @@ router.get("/contact", function(req, res){
     res.render("contact")
 });
 
+router.get("/projects", function(req, res){
+    res.render("projects")
+})
+
 // Show login form
 router.get("/login", function(req, res){
     res.render("login")
@@ -31,7 +35,7 @@ router.get("/register", function(req, res){
 
 // Logout
 router.get("/logout", function(req, res){
-    res.render("logout")
+    res.redirect("/")
 });
 
 module.exports = router;

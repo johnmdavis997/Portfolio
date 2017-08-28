@@ -1,34 +1,10 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<% include ../partials/header %>
     <!-- Load the Paper.js library -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.4/paper-full.min.js"></script>
     <script src ="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.4/howler.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/stylesheets/circles.css">
     <script type="text/paperscript" src="/scripts/circles.js" canvas="myCanvas"></script>
-</head>
-
-<body>
-    <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <span class="nav navbar-brand"><i class="glyphicon glyphicon-user"></i> Kai Davis</span>
-            </div>
-            <ul class="nav navbar-nav">
-                    <li><a href="/" class="navText">Home</a></li>
-                    <li><a href="/contact" class="navText">Contact</a></li>
-                    <li><a href="/about" class="navText">About me </a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/login" class="navText">Login</a></li>                       
-                <li><a href="/register" class="navText">Signup</a></li>                   
-                <li><a href="/logout" class="navText">Sign Out</a></li>                       
-            </ul>
-        </div>
-    </nav>
+<% include ../partials/closing %>
     <div class="container">
         <div id="jt" class="jumbotron">
             <h1>Circles app</h1>
@@ -38,6 +14,4 @@
         <div class="alert alert-danger" role="alert"><strong>Warning!</strong> This project plays sounds so be sure to turn your volume down.</div>
         <canvas id="myCanvas" resize></canvas>
     </div>
-</body>
-
-</html>
+<% include ../partials/footer %>

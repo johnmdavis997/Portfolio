@@ -1,30 +1,6 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<% include ../partials/header %>
     <link rel="stylesheet" href="/stylesheets/color.css">
-    <title>Kai's portfolio site</title>
-</head>
-
-<body>
-    <div class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <span class="nav navbar-brand"><i class="glyphicon glyphicon-user"></i> Kai Davis</span>
-            </div>
-            <ul class="nav navbar-nav">
-                    <li><a href="/" class="navText">Home</a></li>
-                    <li><a href="/contact" class="navText">Contact</a></li>
-                    <li><a href="/about" class="navText">About me </a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/login" class="navText">Login</a></li>                       
-                <li><a href="/register" class="navText">Signup</a></li>                   
-                <li><a href="/logout" class="navText">Sign Out</a></li>                       
-            </ul>
-        </div>
-    </div>
+<% include ../partials/closing %>
     <div class="container">
         <div id="jt" class="jumbotron">
             <h2 id="jtText">The Color Game</h2>
@@ -59,5 +35,4 @@
         </div>
     </div>
     <script src="/scripts/colorgame.js"></script>
-</body>
-</html>
+<% include ../partials/footer %>
